@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion 12</title>
+</head>
+<body>
+
+    <div id="contenedor">
+        <h2>Encuesta de Cine: Nominadas al Oscar 2021</h2>
+
+        <form id="formulario1" name="formulario1" method="post">
+            <fieldset id="datos_personales">
+                <legend>Datos Personales</legend>
+                <label for="nombre" >Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre*"><br>
+                <label for="apellido" >Apellido</label><br>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido*"><br>
+                <label for="dni">DNI</label><br>
+                <input type="text" name="dni" id="dni" placeholder="Dni*" maxlength="9"><br>
+                <label for="edad">Edad</label><br>
+                <input type="text" name="edad" id="edad" placeholder="Edad*" size="2" maxlength="2"><br>
+                <label for="sexo">Sexo</label>
+                <select name="sexo">
+                    <option>Femenino</option>
+                    <option>Masculino</option>
+                </select>
+            </fieldset>
+
+            <fieldset id="mejor-pelicula">
+                <legend>Mejor Película</legend>
+                    <input type="radio" name="pelicula" value="11"> Call Me By Your Name <br>
+                    <input type="radio" name="pelicula" value="22"> Dunkerque<br>
+                    <input type="radio" name="pelicula" value="33"> Déjame Salir<br>
+            </fieldset>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
