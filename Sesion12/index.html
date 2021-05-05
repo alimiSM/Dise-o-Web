@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sesion 12</title>
+    <title>Nominados al Oscar 2021</title>
+
+    <style>
+        body {
+            font-family: 'Century Gothic';
+            background-image: url("../img/oscar.jpg");
+            background-size: cover;
+
+        }
+
+        h2{
+
+        }
+
+    </style>
+
 </head>
 <body>
 
     <div id="contenedor">
-        <h2>Encuesta de Cine: Nominadas al Oscar 2021</h2>
+        <h2 style="text-align:center">Encuesta de Cine: Nominadas al Oscar 2021</h2>
 
         <form id="formulario1" name="formulario1" method="post">
             <fieldset id="datos_personales">
@@ -29,12 +44,36 @@
                 </select>
             </fieldset>
 
+            <br>
+
             <fieldset id="mejor-pelicula">
                 <legend>Mejor Película</legend>
                     <input type="radio" name="pelicula" value="11"> Call Me By Your Name <br>
                     <input type="radio" name="pelicula" value="22"> Dunkerque<br>
                     <input type="radio" name="pelicula" value="33"> Déjame Salir<br>
             </fieldset>
+
+            <br>
+
+            <fieldset id="pelicula-novista">
+                <legend>Seleccione las peliculas que no hayas visto</legend>
+                    <input type="checkbox"> Pelicula 1 <br>
+                    <input type="checkbox"> Pelicula 2 <br>
+                    <input type="checkbox"> Pelicula 3 <br>
+                    <input type="checkbox"> Pelicula 4 <br>
+                    <input type="checkbox"> Pelicula 5 <br>
+            </fieldset>
+            
+            <br>
+
+            <fieldset id="argumento">
+                <legend>Argumento de la pelicula que más te gusto</legend>
+                <textarea name="argumento" rows="14" cols="100"></textarea>
+            </fieldset>
+            
+            <br>
+
+            <input type="reset" value="Borrar Formulario"> <input type="submit" value="Enviar">
 
         </form>
 
