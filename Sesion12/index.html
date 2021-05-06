@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +10,97 @@
     <style>
         body {
             font-family: 'Century Gothic';
-            background-image: url("../img/oscar.jpg");
+            background-image: url("../img/blackgold.jpg");
             background-size: cover;
 
         }
 
-        h2{
+        h2 {
+            color: #C29C26;
+            
+        }
+
+        h2 #logo1 {
+            width: 15%;
+            padding-right:2rem;
+        }
+
+        h2 #logo2{
+            width: 15%;
+            padding-left: 2rem;
+        }
+
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+            color: #C29C26;
 
         }
 
+
+        .contenedor {
+            max-width: 70rem;
+            margin: 0 auto;
+        }
+
+        .sombra {
+            -webkit-box-shadow: 10px 10px 10px 0px #F9EEBA;
+            -moz-box-shadow: 10px 10px 10px 0px #F9EEBA;
+            box-shadow: 10px 10px 10px 0px #F9EEBA;
+            background-color: #2E2F34;
+            padding: 2rem;
+            border-radius: 1rem;
+
+        }
+
+        textarea {
+            width: 100%;
+            border-radius: 8px;
+            border: none;
+        }
+
+        input,
+        select {
+            border-radius: 8px;
+
+        }
+
+        fieldset,
+        footer {
+            color: white;
+            border-radius: 8px;
+        }
+
+
+        .boton {
+            margin: 1rem;
+        }
     </style>
 
 </head>
-<body>
 
-    <div id="contenedor">
-        <h2 style="text-align:center">Encuesta de Cine: Nominadas al Oscar 2021</h2>
+<body>
+    <div class="header">
+        <h2 style="text-align:center"><img id="logo1" src="../img/oscar_logo.png">
+            Encuesta de Cine: Nominadas al Oscar 2021<img id="logo2" src="../img/oscar_logo.png">
+        </h2>
+
+    </div>
+
+    <main id="contenedor" class="contenedor sombra">
 
         <form id="formulario1" name="formulario1" method="post">
             <fieldset id="datos_personales">
                 <legend>Datos Personales</legend>
-                <label for="nombre" >Nombre</label><br>
+                <label for="nombre">Nombre</label><br>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre*"><br>
-                <label for="apellido" >Apellido</label><br>
+                <label for="apellido">Apellido</label><br>
                 <input type="text" name="apellido" id="apellido" placeholder="Apellido*"><br>
                 <label for="dni">DNI</label><br>
                 <input type="text" name="dni" id="dni" placeholder="Dni*" maxlength="9"><br>
                 <label for="edad">Edad</label><br>
-                <input type="text" name="edad" id="edad" placeholder="Edad*" size="2" maxlength="2"><br>
-                <label for="sexo">Sexo</label>
+                <input type="text" name="edad" id="edad" placeholder="Edad*" size="3" maxlength="3"><br>
+                <label for="sexo">Sexo</label><br>
                 <select name="sexo">
                     <option>Femenino</option>
                     <option>Masculino</option>
@@ -48,36 +111,43 @@
 
             <fieldset id="mejor-pelicula">
                 <legend>Mejor Película</legend>
-                    <input type="radio" name="pelicula" value="11"> Call Me By Your Name <br>
-                    <input type="radio" name="pelicula" value="22"> Dunkerque<br>
-                    <input type="radio" name="pelicula" value="33"> Déjame Salir<br>
+                <input type="radio" name="pelicula" value="11"> Call Me By Your Name <br>
+                <input type="radio" name="pelicula" value="22"> Dunkerque<br>
+                <input type="radio" name="pelicula" value="33"> Déjame Salir<br>
             </fieldset>
 
             <br>
 
             <fieldset id="pelicula-novista">
                 <legend>Seleccione las peliculas que no hayas visto</legend>
-                    <input type="checkbox"> Pelicula 1 <br>
-                    <input type="checkbox"> Pelicula 2 <br>
-                    <input type="checkbox"> Pelicula 3 <br>
-                    <input type="checkbox"> Pelicula 4 <br>
-                    <input type="checkbox"> Pelicula 5 <br>
+                <input type="checkbox"> Pelicula 1 <br>
+                <input type="checkbox"> Pelicula 2 <br>
+                <input type="checkbox"> Pelicula 3 <br>
+                <input type="checkbox"> Pelicula 4 <br>
+                <input type="checkbox"> Pelicula 5 <br>
             </fieldset>
-            
+
             <br>
 
             <fieldset id="argumento">
                 <legend>Argumento de la pelicula que más te gusto</legend>
-                <textarea name="argumento" rows="14" cols="100"></textarea>
+                <textarea name="argumento" rows="14"></textarea>
             </fieldset>
-            
+
             <br>
 
-            <input type="reset" value="Borrar Formulario"> <input type="submit" value="Enviar">
+            <input class="boton" type="reset" value="Borrar Formulario">
+            <input class="boton" type="submit" value="Enviar">
 
         </form>
 
-    </div>
-    
+    </main>
+    <br>
+    <footer>
+        <p style="text-align:center ">Todos los derechos reservados a USAT</p>
+    </footer>
+    <br>
+
 </body>
+
 </html>
