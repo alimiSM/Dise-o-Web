@@ -1,0 +1,19 @@
+img{
+    
+    float:right;
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+}
+
+#text{
+    text-align:justify;
+    background-color: palevioletred;
+
+}
+
+#company{
+    background-color: palegoldenrod;
+    width:200px;
+    float:right;
+}
