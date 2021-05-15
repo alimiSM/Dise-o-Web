@@ -1,0 +1,36 @@
+body{
+    background-color: #2AB7CA;
+    background-image: radial-gradient(#F4F4F8 15%, transparent 16%), radial-gradient(white 15%, transparent 16%);
+    background-size: 60px 60px;
+}
+
+*{
+    text-decoration: none;
+}
+
+.box{
+    background-color:#E6E6EA;
+}
+#profile{
+    width:150px;
+
+}
+
+.navbar ul li{
+    display:inline-block;
+    margin-right: 40px;
+}
+
+nav ul{
+    background-color: rgb(44, 111, 255);
+}
+
+.color-h{
+    color: #FED766;
+}
+
+table thead{
+    color: #FE4A49;
+}
+
+
