@@ -1,0 +1,60 @@
+/*.grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,200px);
+    gap: 3px;
+
+}
+
+.a{
+    background-color:red;
+
+}
+
+.b{
+    background-color:rebeccapurple;
+
+}
+
+.c{
+    background-color:green;
+
+}
+
+.d{
+    background-color:yellow;
+
+}
+
+.a, .b,.c,.d{
+    border: 1px solid peru;
+}
+*/
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,100px);
+    grid-template-areas: "head head" "menu main" "foot foot";
+}
+
+.a{
+    grid-area: head;
+    background-color:red;
+
+}
+.b{
+    grid-area: menu;
+    background-color:rebeccapurple;
+
+}
+.c{
+    grid-area: main;
+    background-color:green;
+
+}
+.d{
+    grid-area: foot;
+    background-color:yellow;
+
+}

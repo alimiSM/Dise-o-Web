@@ -1,0 +1,33 @@
+.grid{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: repeat(3,30vh);
+    grid-template-areas: "head head head" "nav section aside" "foot foot foot";
+}
+
+header{
+    grid-area: head;
+    background-color:red;
+
+}
+nav{
+    grid-area: nav;
+    background-color:rebeccapurple;
+
+}
+section{
+    grid-area: section;
+    background-color:green;
+
+}
+aside{
+    grid-area: aside;
+    background-color:yellow;
+
+}
+
+footer{
+    grid-area: foot;
+    background-color:pink;
+
+}

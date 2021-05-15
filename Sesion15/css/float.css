@@ -1,0 +1,42 @@
+
+
+header{
+    background-color: purple;
+}
+
+nav{
+    background-color: darkslateblue;
+    width:25%;
+}
+
+section{
+    background-color:palevioletred;
+    width:50%;
+
+}
+
+aside{
+    background-color:red;
+    width:25%;
+
+}
+
+footer{
+    background-color: cyan;
+    clear: left;
+}
+
+header,nav,section,aside,footer{
+    height:200px;
+    font-size: 24px;
+    color:whitesmoke;
+
+}
+
+nav,section,aside{
+    float:left;
+}
+
+header:hover,nav:hover,section:hover,aside:hover,footer:hover{
+border-bottom: 3px solid green;
+}
