@@ -19,18 +19,49 @@ body{
 .navbar ul li{
     display:inline-block;
     margin-right: 40px;
+    position:relative;
+    left:60rem;    
+}
+
+nav ul li a{
+    color: #F4F4F8;
 }
 
 nav ul{
     background-color: rgb(44, 111, 255);
+    padding:10px;
+
 }
 
 .color-h{
     color: #FED766;
+    font-weight: bold;
+    text-shadow:1px 1px 2px black, 0 0 1em #f44a49, 0 0 0.2em #f44a49;
 }
+
+
 
 table thead{
     color: #FE4A49;
 }
 
+img{
+    opacity:0;
+}
 
+img:hover{
+    opacity:1;
+    transition: 0.5s;;
+}
+
+.box{
+    padding:30px;
+}
+
+footer{
+    margin-top: 20px;
+    background-color: rgb(44, 111, 255);
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 0;
+}
