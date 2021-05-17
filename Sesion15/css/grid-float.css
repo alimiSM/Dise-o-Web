@@ -1,7 +1,13 @@
+*{
+    margin: 0;
+}
+
 .grid{
+    max-width: 100%;
+    min-height: 100vh;
     display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: repeat(3,30vh);
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 200px 1fr 100px;
     grid-template-areas: "head head head" "nav section aside" "foot foot foot";
 }
 

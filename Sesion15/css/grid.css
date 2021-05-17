@@ -30,9 +30,12 @@
     border: 1px solid peru;
 }
 */
-
+*{
+    margin:0px;
+}
 .grid{
     display: grid;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3,100px);
     grid-template-areas: "head head" "menu main" "foot foot";

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+
+.grid{
+    max-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 1fr 100px 50px;
+    grid-template-areas: "head " "nav" "section" "aside" "foot";
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 150px 50px 1fr 100px;
+        grid-template-areas: "head head" "nav nav" "section aside" "foot foot";
+    }
+}
+
+@media(min-width:1001px){
+    .grid {
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 200px 1fr 100px;
+        grid-template-areas: 
+        "head head head" 
+        "nav section aside"
+        "foot foot foot";
+    }
+}
+
+
+        
+/*
+@media (max-width: 599px) {
+    .grid{
+        grid-template-areas: "head head head" "nav nav nav" "section section section" "aside aside aside" "foot foot foot";
+        grid-template-rows: 200px 1fr 200px 200px 100px;
+    }
+}
+
+@media (min-width: 600px) and (max-width:1000px) {
+    .grid{
+        grid-template-areas: "head head head" "nav nav nav" "section section aside" "foot foot foot";
+        grid-template-rows: 200px 1fr 200px 100px;
+    }
+}
+
+@media (min-width: 1001px) {
+    .grid{
+        grid-template-rows: 200px 1fr 100px;
+        grid-template-areas: "head head head" "nav section aside" "foot foot foot";
+    }
+}
+*/
+
+
+header{
+    grid-area: head;
+    background-color:red;
+
+}
+nav{
+    grid-area: nav;
+    background-color:rebeccapurple;
+
+}
+section{
+    grid-area: section;
+    background-color:green;
+
+}
+aside{
+    grid-area: aside;
+    background-color:yellow;
+
+}
+
+footer{
+    grid-area: foot;
+    background-color:pink;
+
+}
