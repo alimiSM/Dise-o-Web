@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Sesion18/css/agenda2.css">
+    <title>Agenda 2</title>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h3>Mi Agenda de Contactos</h3>
+            <hr>
+        </header>
+        <form>
+            <span>Nombre:</span>
+            <input type="text" id="nombre"><br><br>
+            <span>Numero Celular:</span>
+            <input type="text" id="numero">
+        </form>
+        <hr>
+        <div>
+            <button type="button" onclick="guardar()">Guardar</button>
+            <button type="button" onclick="recuperar()">Recuperar</button>
+            <button type="button" onclick="eliminar()">Eliminar</button>
+            <button type="button" onclick="eliminarTodo()">Eliminar Todos</button>
+        </div>
+        <hr>
+        <span class="titu">Nombre</span> <span class="titu">Celular</span><br>
+        <ul id="contactos"></ul>
+    </div>
+    <script type="text/javascript" src="../Sesion18/js/agenda2.js"></script>
+</body>
+</html>

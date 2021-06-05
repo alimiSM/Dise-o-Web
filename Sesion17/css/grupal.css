@@ -1,0 +1,12 @@
+#cl{
+    width:15%;
+    align-items: flex-start;
+}
+
+#f4,#f2{
+    background-color:cyan;
+    width:25%;
+    text-align:center;
+    padding:10px;
+    border-radius: 8px;
+}
