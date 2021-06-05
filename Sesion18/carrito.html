@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="../Sesion18/css/carrito.css" />
+</head>
+
+<body>
+
+    <section class="container content-section">
+        <h2 class="section-header">RANDOM</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">RANDOM 1</span>
+                <img class="shop-item-image" src="https://om-beauty.com/wp-content/uploads/2015/11/product-img-1.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button id="b1" class="btn btn-primary shop-item-button" type="button"
+                        onclick="agregar(this.id)">AÑADIR</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">RANDOM 2</span>
+                <img class="shop-item-image"
+                    src="https://4.imimg.com/data4/HW/IW/MY-22545032/leather-gym-bags-500x500.jpeg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$14.99</span>
+                    <button id="b2" class="btn btn-primary shop-item-button" type="button"
+                        onclick="agregar(this.id)">AÑADIR</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">RANDOM 3</span>
+                <img class="shop-item-image" src="https://amanimart.com/itf_public/products/Arish858302163.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$9.99</span>
+                    <button id="b3" class="btn btn-primary shop-item-button" type="button"
+                        onclick="agregar(this.id)">AÑADIR</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container content-section">
+        <h2 class="section-header">CARRITO</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+
+            <span class="cart-price cart-header cart-column">PRECIO</span>
+
+            <span class="cart-quantity cart-header cart-column">CANTIDAD</span>
+        </div><!--
+        <ul id="cart-items-names">
+
+        </ul>
+        <ul id="cart-items-prices">
+
+        </ul>-->
+
+        <div id="cart-items">
+
+        </div>
+
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">COMPRAR</button>
+    </section>
+    <script type="text/javascript" src="../Sesion18/js/carrito.js"></script>
+</body>
+
+</html>

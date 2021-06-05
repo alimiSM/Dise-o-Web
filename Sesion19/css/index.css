@@ -1,0 +1,35 @@
+#lorem1::first-letter{
+    font-size:  2rem;
+}
+
+.pseudoEle{
+    border-top: 1px solid black;
+    width:10%;
+    text-align: center;
+}
+
+.pseudoEle:before{
+    content: "Hola";
+    background-color:red;
+}
+
+.pseudoEle:after{
+    content: "Peru";
+    background-color:red;
+}
+
+.pseudoCla:hover{
+    background-color:yellow;
+}
+
+#enl:hover{
+    color: red;
+}
+
+#enl:focus{
+    color: green;
+}
+
+#enl:active{
+    color: hotpink;
+}

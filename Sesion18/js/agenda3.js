@@ -3,9 +3,9 @@ function guardar() {
     var numero = document.getElementById("numero").value;
     var email = document.getElementById("email").value;
 
-    const datos = {
-        'numero': numero,
-        ' email': email,
+    var datos = {
+        numero: numero,
+        email: email
     };
 
     localStorage.setItem(nombre, JSON.stringify(datos));
@@ -42,10 +42,8 @@ function actualizar() {
     } else {
         for (var i = 0; i <= localStorage.length - 1; i++) {
             var key = localStorage.key(i);
-            const val = localStorage.getItem(key);
-            console.log(val.);
-
-                registro += "<li>" + '<span class="nom">' + key + '</span>' + '<span class="nom">' + val + '</span>' + '<span class="nom">' + val + '</span>' + '</li><br>';
+            var data = JSON.parse(localStorage.getItem(key));
+                registro += "<li>" + '<span class="nom">' + key + '</span>' + '<span class="nom">' + JSON.stringify(data) + '</spanS>' +'</li><br>';
 
         }
     }
