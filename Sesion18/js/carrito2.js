@@ -91,10 +91,10 @@ function showCart() {
         $("#cartBody").append(row);
         total += totalProducts;
         // console.log("Total en Show Cart: "+total);
-        document.getElementById("subTotal").innerHTML = total;
+        document.getElementById("subTotal").innerHTML = "$"+total;
         $("#totalCart").append(total);
 
     }
 }
 
-function see() { $('#btnAdd').show(); }
+function see() { $('#btnAdd,#qty').show(); }

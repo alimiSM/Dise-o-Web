@@ -1,18 +1,42 @@
+body{
+    background-color:aliceblue;
+    font-family: Roboto;
+}
+
+#name{
+    background-color:rgba(105, 90, 205, 0.544);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding:5px;
+    text-align:center;
+    border-radius:10px;
+    color:slateblue;
+}
+
 img{
     width: 80%;
 }
 
-
 table{
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.info{
-    width:90%;
+table,.product-card,#subTotal{
+    text-align:center;
+}
+
+#process{
+    font-style: italic;
+    opacity: 0.5;
+    margin-left: 20px;
 }
 
 .product-card{
-    background-color:rgba(236, 236, 236, 0.537);
+    background-color:rgba(105, 90, 205, 0.544);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius:20px;
     padding:5px;
     width: 250px;
@@ -20,12 +44,48 @@ table{
     margin-top:10px;
 }
 
-#product-price{
-    background-color:gray;
+#product-price,#subTotal{
+    background-color:slateblue;
     padding:5px;
     border-radius:20px;
     width:80px;
+}
+
+.product-card,#btnAdd,#product-price{
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+}
+
+#btnAdd{
+    margin-bottom: 20px;
+}
+
+button{
+    background-color:transparent;
+    border-radius:20px;
+    padding:5px;
+    width:80px;
+    border: 1px solid slateblue;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:slateblue;
+    border: 1px solid transparent;
+}
+
+.flex-center{
+    display:flex;
+    justify-content: space-around;
+    flex-direction:row;
+    align-items:center;
+}
+
+#product-view select, #product-view input{
+    margin-left: -80px;
+}
+
+#all-total #subTotal{
+    margin-left:-75%;
 }
