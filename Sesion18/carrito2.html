@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../Sesion18/js/carrito2.js"></script>
+    <link rel="stylesheet" href="../Sesion18/css/carrito2.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cart</h2>
+    Seleccionar el Producto :
+    <select id="products" name="miSelect" onchange="see()">
+        <option value="" selected="selected" hidden="hidden">Ver Productos</option>
+        <option value="1800">iPhone6</option>
+        <option value="2800">iPhone6 Plus</option>
+        <option value="2800">iPad Air 2</option>
+        <option value="300">Apple Pencil</option>
+
+    </select>
+
+    Cantidad :
+    <input type="text" id="qty" size="3" value="1"><br>
+    <div id="info-product">
+
+    </div>
+     
+    <p/>
+    <button id="btnAdd" onclick="addToCart()"style="display:none;">Añadir</button>
+    <p />
+    <table id="cart" border="1">
+         <thead>
+              <tr>
+                  <th>Producto</th>
+                  <th>Precio</th>
+                  <th>Cantidad</th>
+                  <th>Total</th>
+                  <th></th>
+             </tr>
+         </thead>
+         <tbody id="cartBody">
+
+         </tbody>
+
+    </table>
+
+    <h3>TOTAL:</h3>
+    <h3 id="subTotal"></h3>
+
+</body>
+</html>

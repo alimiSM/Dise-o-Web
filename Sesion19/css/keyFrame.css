@@ -1,0 +1,25 @@
+body{
+    overflow: hidden;
+}
+
+.slide{
+    animation-duration: 3s;
+    animation-name: slideIn;
+    font-size: 14px;
+    font-family: Helvetica;
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+@keyframes slideIn {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to{
+        margin-left:0%;
+        width: 100%;
+    }
+}
+

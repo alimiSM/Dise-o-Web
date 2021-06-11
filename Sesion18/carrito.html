@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
-    <link rel="stylesheet" href="../Sesion18/css/carrito.css" />
+    <link rel="stylesheet" href="../Sesion18/css/carrito.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -54,7 +55,11 @@
             <span class="cart-price cart-header cart-column">PRECIO</span>
 
             <span class="cart-quantity cart-header cart-column">CANTIDAD</span>
-        </div><!--
+
+            <span class="cart-total-item cart-header cart-column">TOTAL</span>
+
+        </div>
+        <!--
         <ul id="cart-items-names">
 
         </ul>
@@ -68,11 +73,14 @@
 
         <div class="cart-total">
             <strong class="cart-total-title">Total</strong>
-            <span class="cart-total-price">$0</span>
+            <span id="priceC" class="cart-total-price">$0</span>
         </div>
         <button class="btn btn-primary btn-purchase" type="button">COMPRAR</button>
+        <button type="button" onclick="limpiar()" type="button">LIMPIAR TODO</button>
     </section>
-    <script type="text/javascript" src="../Sesion18/js/carrito.js"></script>
+    <script type="text/javascript" src="../Sesion18/js/carrito.js">
+
+    </script>
 </body>
 
 </html>

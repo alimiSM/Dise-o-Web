@@ -41,7 +41,11 @@
 }
 
 .cart-quantity {
-    width: 35%;
+    width: 20%;
+}
+
+.cart-total-item{
+    width: 10%;
 }
 
 .cart-item-title {
