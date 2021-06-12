@@ -1,6 +1,5 @@
 $("button").mousedown(function () {
-    $(this).html("Recommended").velocity({
-        backgroundColorRed: "0",
+    $(this).html("Using Velocity").velocity({
         translateY: "-1.5rem",
         rotateZ: "-10deg"
     }, 100, "easeOut").velocity({

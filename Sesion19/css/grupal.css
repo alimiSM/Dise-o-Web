@@ -25,8 +25,8 @@
     user-select: none;
     transform-origin: 100% 100%;
     
-    &:focus { outline: 0; }
   }
+ 
   
   .shadow {
     margin-top: -.325rem;
